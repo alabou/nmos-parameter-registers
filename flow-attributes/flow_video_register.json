@@ -10,6 +10,18 @@
         { "not": { "properties": { "media_type": { "enum": [ "video/jxsv" ] } } } },
         { "$ref": "flow_video_jxsv_register.json" }
       ]
+    },
+    {
+      "anyOf": [
+        { "not": { "properties": { "media_type": { "enum": [ "video/H264" ] } } } },
+        { "$ref": "flow_video_H264_register.json" }
+      ]
+    },
+    {
+      "anyOf": [
+        { "not": { "properties": { "media_type": { "enum": [ "video/H265" ] } } } },
+        { "$ref": "flow_video_H265_register.json" }
+      ]
     }
   ]
 }
