@@ -8,16 +8,6 @@
       "description": "Bit rate, in kilobits/second. Integer value expressed in units of 1000 bits per second, rounding up.",
       "type": "integer"
     },
-    "packet_transmission_mode": {
-      "description": "H.264 packetization and transmission mode.",
-      "type": "string",
-      "enum": [
-        "non_interleaved_nal_units",
-        "interleaved_nal_units",
-        "single_nal_unit"
-      ],
-      "default": "single_nal_unit"
-    },
     "st2110_21_sender_type": {
       "description": "ST 2110-21 Sender Type. Indicates the traffic shaping and delivery timing requirements of ST 2110-21 to which the Sender complies.",
       "type": "string",
