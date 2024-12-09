@@ -2,11 +2,26 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "description": "Describes Audio Flow additional and extensible attributes defined in the NMOS Parameter Registers.",
-  "title": "Audio Flow resource",
-  "properties": {
-    "bit_rate": {
-      "description": "Bit rate, in kilobits/second. Integer value expressed in units of 1000 bits per second, rounding up.",
-      "type": "integer"
+  "title": "Video Flow resource",
+  "allOf": [
+    { "$ref": "flow_audio_base_register.json" },
+    {
+      "anyOf": [
+        { "not": { "properties": { "media_type": { "enum": [ "audio/mpeg4-generic" ] } } } },
+        { "$ref": "flow_video_aac_register.json" }
+      ]
+    },
+    {
+      "anyOf": [
+        { "not": { "properties": { "media_type": { "enum": [ "audio/MP4A-LATM" ] } } } },
+        { "$ref": "flow_video_aac_register.json" }
+      ]
+    },
+    {
+      "anyOf": [
+        { "not": { "properties": { "media_type": { "enum": [ "audio/MP4A-ADTS" ] } } } },
+        { "$ref": "flow_video_aac_register.json" }
+      ]
     }
-  }
+  ]
 }

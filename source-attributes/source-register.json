@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "description": "Describes Source additional and extensible attributes defined in the NMOS Parameter Registers.",
+    "title": "Source resource",
+    "properties": {
+      "urn:x-matrox:receiver_id": {
+        "description": "UUID of the Receiver providing the essence to this Source or null",
+        "type": [
+            "string",
+            "null"
+        ],
+        "default": null
+      },
+      "urn:x-matrox:layer": {
+        "description": "Layer of a multiplexed Receiver, if any, providing the essence to this Source",
+        "type": "integer",
+        "minimum": 0
+      },
+      "urn:x-matrox:synchronous_media": {
+        "description": "This attributes indicates that the media is synchronous (true) or asynchronous (false) to the source reference clock.",
+        "type": "boolean"
+      }
+    }
+  }
+  

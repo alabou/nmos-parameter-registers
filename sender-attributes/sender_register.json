@@ -9,14 +9,37 @@
       "type": "integer"
     },
     "packet_transmission_mode": {
-      "description": "JPEG XS packetization and transmission mode. String value representing the valid combinations of the transmission mode (T) bit and packetization mode (K) bit.",
-      "type": "string",
-      "enum": [
-        "codestream",
-        "slice_sequential",
-        "slice_out_of_order"
-      ],
-      "default": "codestream"
+      "anyOf": [
+        {
+          "description": "JPEG XS packetization and transmission mode. String value representing the valid combinations of the transmission mode (T) bit and packetization mode (K) bit.",
+          "type": "string",
+          "enum": [
+            "codestream",
+            "slice_sequential",
+            "slice_out_of_order"
+          ],
+          "default": "codestream"
+        },
+        {
+          "description": "H.264 packetization and transmission mode.",
+          "type": "string",
+          "enum": [
+            "non_interleaved_nal_units",
+            "interleaved_nal_units",
+            "single_nal_unit"
+          ],
+          "default": "single_nal_unit"
+        },
+        {
+          "description": "H.265 packetization and transmission mode.",
+          "type": "string",
+          "enum": [
+            "non_interleaved_nal_units",
+            "interleaved_nal_units"
+          ],
+          "default": "non_interleaved_nal_units"
+        }
+      ]
     },
     "st2110_21_sender_type": {
       "description": "ST 2110-21 Sender Type. Indicates the traffic shaping and delivery timing requirements of ST 2110-21 to which the Sender complies.",
@@ -26,6 +49,26 @@
         "2110TPNL",
         "2110TPW"
       ]
-    }
+    },
+    "urn:x-matrox:parameter_sets_flow_mode": {
+      "description": "H.264 / H.265 parameter sets flow mode.",
+      "type": "string",
+      "enum": [
+        "strict",
+        "static",
+        "dynamic"
+      ],
+      "default": "dynamic"
+    },
+    "urn:x-matrox:parameter_sets_transport_mode": {
+      "description": "H.264 / H.265 parameter sets transport mode.",
+      "type": "string",
+      "enum": [
+        "in_band",
+        "out_of_band",
+        "in_and_out_of_band"
+      ],
+      "default": "in_band"
+    }    
   }
 }

@@ -29,6 +29,42 @@
       "description": "Identifies the Link Offset Delay (microseconds) used to synchronise Playout Time of all components of a stream by receivers. If auto is set, the minimum achievable delay is selected.",
       "minimum": 0,
       "pattern": "^auto$"
+    },
+    "ext_privacy_protocol": {
+      "format": "string",
+      "description": "Privacy Encryption Protocol (PEP) parameter as per IPMX TR-10-13"
+    },
+    "ext_privacy_mode": {
+      "format": "string",
+      "description": "Privacy Encryption Protocol (PEP) parameter as per IPMX TR-10-13"
+    },
+    "ext_privacy_iv": {
+      "format": "string",
+      "description": "Privacy Encryption Protocol (PEP) parameter as per IPMX TR-10-13"
+    },
+    "ext_privacy_key_generator": {
+      "format": "string",
+      "description": "Privacy Encryption Protocol (PEP) parameter as per IPMX TR-10-13"
+    },
+    "ext_privacy_key_id": {
+      "format": "string",
+      "description": "Privacy Encryption Protocol (PEP) parameter as per IPMX TR-10-13"
+    },
+    "ext_privacy_key_version": {
+      "format": "string",
+      "description": "Privacy Encryption Protocol (PEP) parameter as per IPMX TR-10-13"
+    },
+    "ext_privacy_ecdh_sender_public_key": {
+      "format": "string",
+      "description": "Privacy Encryption Protocol (PEP) parameter as per IPMX TR-10-13"
+    },
+    "ext_privacy_ecdh_receiver_public_key": {
+      "format": "string",
+      "description": "Privacy Encryption Protocol (PEP) parameter as per IPMX TR-10-13"
+    },
+    "ext_privacy_ecdh_curve": {
+      "format": "string",
+      "description": "Privacy Encryption Protocol (PEP) parameter as per IPMX TR-10-13"
     }
   }
 }

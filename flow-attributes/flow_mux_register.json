@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "description": "Describes Mux Flow additional and extensible attributes defined in the NMOS Parameter Registers.",
+    "title": "Mux Flow resource",
+    "properties": {
+      "urn:x-matrox:video_layers": {
+        "description": "Number of video layers in this fully-described mux",
+        "type": "integer",
+        "minimum": 0
+      },
+      "urn:x-matrox:audio_layers": {
+        "description": "Number of audio layers in this fully-described mux",
+        "type": "integer",
+        "minimum": 0
+      },
+      "urn:x-matrox:data_layers": {
+        "description": "Number of data layers in this fully-described mux",
+        "type": "integer",
+        "minimum": 0
+      },
+      "urn:x-matrox:layer_compatibility_groups": {
+        "description": "Indicates the compatibility groups to which this Flow belongs.",
+        "type": "array",
+        "items": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 63
+        }
+      }      
+    }
+  }
+  
