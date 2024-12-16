@@ -8,19 +8,19 @@
     {
       "anyOf": [
         { "not": { "properties": { "media_type": { "enum": [ "audio/mpeg4-generic" ] } } } },
-        { "$ref": "flow_video_aac_register.json" }
+        { "$ref": "flow_audio_aac_register.json" }
       ]
     },
     {
       "anyOf": [
         { "not": { "properties": { "media_type": { "enum": [ "audio/MP4A-LATM" ] } } } },
-        { "$ref": "flow_video_aac_register.json" }
+        { "$ref": "flow_audio_aac_register.json" }
       ]
     },
     {
       "anyOf": [
         { "not": { "properties": { "media_type": { "enum": [ "audio/MP4A-ADTS" ] } } } },
-        { "$ref": "flow_video_aac_register.json" }
+        { "$ref": "flow_audio_aac_register.json" }
       ]
     }
   ]
