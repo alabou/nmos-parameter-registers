@@ -38,6 +38,15 @@
             "interleaved_nal_units"
           ],
           "default": "non_interleaved_nal_units"
+        },
+        {
+          "description": "AAC packetization and transmission mode.",
+          "type": "string",
+          "enum": [
+            "non_interleaved_access_units",
+            "interleaved_access_units"
+          ],
+          "default": "non_interleaved_access_units"
         }
       ]
     },
