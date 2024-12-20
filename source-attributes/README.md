@@ -25,3 +25,26 @@ Query APIs and their clients which support v1.3 of IS-04 or operate in a mixed-v
 
 Note: JSON schemas supporting validation of all the attributes will be defined in this register.
 These MAY be used in addition to the schemas, such as _source_generic.json_ and _source_audio.json_, found in the AMWA IS-04 specification.
+
+### receiver_id
+- **Name:** `urn:x-matrox:receiver_id`
+- **Description:** This attributes indicates the Receiver providing the essence to the Source.
+- **Specification:** [AMWA IS-04](https://specs.amwa.tv/IS-04/v1.3)
+- **Applicability:** 
+- **Permitted Values:**
+  - The UUID of a Receiver.
+
+### layer
+- **Name:** `urn:x-matrox:layer`
+- **Description:** This attributes indicates the Receiver's sub-Stream providing the essence to the Source.
+- **Specification:** [AMWA IS-04](https://specs.amwa.tv/IS-04/v1.3), [Matrox Receiver Capabilities](https://github.com/alabou/NMOS-MatroxOnly/blob/main/ReceiverCapabilities.md)
+- **Applicability:** 
+- **Permitted Values:**
+  - The layer value matching a sub-Stream Constraint Set of the Receiver's Capabilities.
+
+### synchronous_media
+- **Name:** `urn:x-matrox:synchronous_media`
+- **Description:** This attributes indicates the media is synchronous (true) or asynchronous (false) to the source reference clock. An unspecified attribute shall be interpreted according to the operational environment. For an ST-2110 environment an unspecified attribute must be interpreted as synchronous media. For an IPMX environment an unspecified attribute must be interpreted as an asynchronous media. If this attribute is not specified for a Source then the SDP transport file a=mediaclk attribute should be used to know about the media being synchronous or asynchronous.
+- **Specification:** [AMWA IS-04](https://specs.amwa.tv/IS-04/v1.3)
+- **Applicability:** 
+- **Permitted Values:** true, false

@@ -65,6 +65,18 @@
     "ext_privacy_ecdh_curve": {
       "format": "string",
       "description": "Privacy Encryption Protocol (PEP) parameter as per IPMX TR-10-13"
+    },
+    "ext_audio_layers_mapping": {
+      "format": "string",
+      "description": "For a Receiver of format urn:x-nmos:format:mux, it indicates, for a given format, the sub-Stream of a multiplexed stream corresponding to a Receiver's sub-Stream layer."
+    },
+    "ext_video_layers_mapping": {
+      "format": "string",
+      "description": "For a Receiver of format urn:x-nmos:format:mux, it indicates, for a given format, the sub-Stream of a multiplexed stream corresponding to a Receiver's sub-Stream layer."
+    },
+    "ext_data_layers_mapping": {
+      "format": "string",
+      "description": "For a Receiver of format urn:x-nmos:format:mux, it indicates, for a given format, the sub-Stream of a multiplexed stream corresponding to a Receiver's sub-Stream layer."
     }
   }
 }

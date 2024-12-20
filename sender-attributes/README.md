@@ -59,4 +59,18 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
     - `2110TPNL`
     - `2110TPW`
 
+### parameter_sets_transport_mode
+- **Name:** `urn:x-matrox:parameter_sets_transport_mode`
+- **Description:** Describes the parameter sets transport mode for compressed audio and video
+- **Specification:** [AMWA IS-04](https://specs.amwa.tv/IS-04/v1.3), [AAC](https://github.com/alabou/NMOS-MatroxOnly/blob/main/NMOS%20With%20AAC.md), [H.264](https://github.com/alabou/NMOS-MatroxOnly/blob/main/NMOS%20With%20H.264.md), [H.265](https://github.com/alabou/NMOS-MatroxOnly/blob/main/NMOS%20With%20H.265.md)
+- **Applicability:** `urn:x-nmos:transport:rtp`, `urn:x-matrox:transport:rtp.tcp`, `urn:x-matrox:transport:srt.tcp`
+- **Permitted Values:** `in-band`, `out-of-band`, `in-and-out-of-band`
+
+### parameter_sets_flow_mode
+- **Name:** `urn:x-matrox:parameter_sets_flow_mode`
+- **Description:** Describes the parameter sets flow mode for compressed audio and video
+- **Specification:** [AMWA IS-04](https://specs.amwa.tv/IS-04/v1.3), [AAC](https://github.com/alabou/NMOS-MatroxOnly/blob/main/NMOS%20With%20AAC.md), [H.264](https://github.com/alabou/NMOS-MatroxOnly/blob/main/NMOS%20With%20H.264.md), [H.265](https://github.com/alabou/NMOS-MatroxOnly/blob/main/NMOS%20With%20H.265.md)
+- **Applicability:** `urn:x-nmos:transport:rtp`, `urn:x-matrox:transport:rtp.tcp`, `urn:x-matrox:transport:srt.tcp`
+- **Permitted Values:** `strict`, `static` and `dynamic`
+
 [RFC-9134]: https://tools.ietf.org/html/rfc9134 "RTP Payload Format for ISO/IEC 21122 (JPEG XS)"
