@@ -78,6 +78,21 @@
         "in_and_out_of_band"
       ],
       "default": "in_band"
-    }    
+    },
+    "urn:x-matrox:hkep": {
+      "description": "A boolean attribute indicating if the IPMX HKEP protocol is used by the Sender. It matches with the presence (true) or absence (false) of `hkep` attributes in the Sender's SDP transport file.",
+      "type": "boolean"
+    },
+    "urn:x-matrox:privacy": {
+      "description": "A boolean attribute indicating if the IPMX PEP protocol is used by the Sender. It matches with the presence (true) or absence (false) of an `privacy` attribute in the Sender's SDP transport file.",
+      "type": "boolean"
+    },
+    "urn:x-matrox:info_block": {
+      "description": "An array of integers attribute indicating the IPMX media info block types produced by the Sender. The array is empty if the Sender does not produces media info blocks.",
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    }
   }
 }

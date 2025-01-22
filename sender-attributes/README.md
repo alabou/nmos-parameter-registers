@@ -73,4 +73,26 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
 - **Applicability:** `urn:x-nmos:transport:rtp`, `urn:x-matrox:transport:rtp.tcp`, `urn:x-matrox:transport:srt.tcp`
 - **Permitted Values:** `strict`, `static` and `dynamic`
 
+### hkep
+- **Name:** `urn:x-matrox:hkep`
+- **Description:** A boolean attribute indicating if the IPMX HKEP protocol is used by the Sender. It matches with the presence (true) or absence (false) of `hkep` attributes in the Sender's SDP transport file.
+- **Specification:** [AMWA IS-04](https://specs.amwa.tv/IS-04/v1.3), [IPMX](https://github.com/alabou/NMOS-MatroxOnly/blob/main/NMOS%20With%20IPMX.md)
+- **Applicability:** `urn:x-nmos:transport:rtp`, `urn:x-matrox:transport:rtp.tcp`, `urn:x-matrox:transport:srt.rtp`, `urn:x-nmos:transport:rtsp`, `urn:x-nmos:transport:rtsp.tcp`
+- **Permitted Values:** boolean `true`, `false`
+
+### privacy
+- **Name:** `urn:x-matrox:privacy`
+- **Description:** A boolean attribute indicating if the IPMX PEP protocol is used by the Sender. It matches with the presence (true) or absence (false) of an `privacy` attribute in the Sender's SDP transport file.
+- **Specification:** [AMWA IS-04](https://specs.amwa.tv/IS-04/v1.3), [IPMX](https://github.com/alabou/NMOS-MatroxOnly/blob/main/NMOS%20With%20IPMX.md)
+- **Applicability:** `urn:x-nmos:transport:rtp`, `urn:x-matrox:transport:rtp.tcp`, `urn:x-matrox:transport:srt.rtp`, `urn:x-nmos:transport:rtsp`, `urn:x-nmos:transport:rtsp.tcp`
+- **Permitted Values:** boolean `true`, `false`
+
+### info_block
+- **Name:** `urn:x-matrox:info_block`
+- **Description:** An array of integers attribute indicating the IPMX media info block types produced by the Sender. The array is empty if the Sender does not produces media info blocks.
+- **Specification:** [AMWA IS-04](https://specs.amwa.tv/IS-04/v1.3), [IPMX](https://github.com/alabou/NMOS-MatroxOnly/blob/main/NMOS%20With%20IPMX.md)
+- **Applicability:** `urn:x-nmos:transport:rtp`, `urn:x-matrox:transport:rtp.tcp`, `urn:x-matrox:transport:srt.rtp`, `urn:x-nmos:transport:rtsp`, `urn:x-nmos:transport:rtsp.tcp`
+- **Permitted Values:** array of non-negative integers, may be empty.
+
+
 [RFC-9134]: https://tools.ietf.org/html/rfc9134 "RTP Payload Format for ISO/IEC 21122 (JPEG XS)"
