@@ -87,6 +87,13 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
   - **Type:** integer
 - **Applicability:** AMWA IS-04 v1.3
 
+### LayerEnabled
+- **Name:** `urn:x-matrox:cap:meta:layer_enabled`
+- **Description:** Indicates that the Constraint Set associated with a layer is enabled and override the `urn:x-nmos:cap:meta:enabled` attribute.
+- **Specification:** [Sender Capabilities](https://github.com/alabou/NMOS-MatroxOnly/blob/main/SenderCapabilities.md), [Receiver Capabilities](https://github.com/alabou/NMOS-MatroxOnly/blob/main/ReceiverCapabilities.md)
+  - **Type:** boolean
+- **Applicability:** AMWA IS-04 v1.3
+
 ### Layer Compatibility Groups
 - **Name:** `urn:x-matrox:cap:meta:layer_compatibility_groups`
 - **Description:** Indicates the layer compatibility groups associated with the Constraint Set. A Constraint Set without a `urn:x-matrox:cap:meta:layer_compatibility_groups` attribute is assumed as being part of all groups.
