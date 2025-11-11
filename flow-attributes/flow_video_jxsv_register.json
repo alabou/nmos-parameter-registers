@@ -44,8 +44,12 @@
         "Light422.10",
         "Light-Subline422.10",
         "MLS.12",
+        "MLS.16",
         "High420.12",
-        "Main420.12"
+        "Main420.12",
+        "TDC444.12",
+        "TDCMLS444.12",
+        "CHigh444.12"
       ]
     },
     "sublevel": {
