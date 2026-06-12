@@ -38,14 +38,18 @@
         "High4444.12",
         "Main4444.12",
         "High444.12",
+        "CHigh444.12",
         "Main444.12",
         "Light444.12",
         "Main422.10",
         "Light422.10",
         "Light-Subline422.10",
         "MLS.12",
+        "MLS.16",
         "High420.12",
-        "Main420.12"
+        "Main420.12",
+        "TDC444.12",
+        "TDCMLS444.12"
       ]
     },
     "sublevel": {
@@ -59,6 +63,18 @@
         "Sublev4bpp",
         "Sublev3bpp",
         "Sublev2bpp"
+      ]
+    },
+    "fbblevel": {
+      "description": "Fbblevel. Indicates additional constraints on parameters of the coding tools that are in use, as defined for the Flow media type. For example, in the case of JPEG XS, the level indicates constraints in the decoded image domain, and the fbblevel indicates constraints in the encoded image domain.",
+      "type": "string",
+      "enum": [
+        "Unrestricted",
+        "FbblevFull",
+        "Fbblev3bpp",
+        "Fbblev4.5bpp",
+        "Fbblev8bpp",
+        "Fbblev12bpp"
       ]
     }
   }

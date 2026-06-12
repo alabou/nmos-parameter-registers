@@ -60,6 +60,9 @@
     "urn:x-nmos:cap:format:sublevel": {
       "$ref": "param_constraint_string.json"
     },
+    "urn:x-nmos:cap:format:fbblevel": {
+      "$ref": "param_constraint_string.json"
+    },
     "urn:x-nmos:cap:format:channel_count": {
       "$ref": "param_constraint_integer.json"
     },

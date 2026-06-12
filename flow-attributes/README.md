@@ -124,6 +124,17 @@ These MAY be used in addition to the schemas, such as _flow_video.json_ and _flo
   - For example
     - `Sublev3bpp`
 
+### Fbblevel
+- **Name:** `fbblevel`
+- **Description:** Indicates additional constraints on parameters of the coding tools that are in use, as defined for the Flow media type.
+- **Specification:** [AMWA BCP-006-01](https://specs.amwa.tv/bcp-006-01/v1.0)
+- **Applicability:** `urn:x-nmos:format:video`
+- **Permitted Values:**
+  - Since AMWA IS-04 v1.3, string values defined for the Flow media type, as enumerated in the schema accompanying this register
+  - For `video/jxsv`, the values are the fbblevel names defined by ISO/IEC 21122-2, with any white space Unicode characters omitted as per [RFC 9134][RFC-9134]
+  - For example
+    - `Fbblev8bpp`
+
 ### Transfer Characteristic
 - **Name:** `transfer_characteristic`
 - **Description:** Transfer characteristic.
