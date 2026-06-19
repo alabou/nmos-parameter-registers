@@ -18,6 +18,25 @@
       "type": "boolean",
       "default": true
     },
+    "urn:x-matrox:cap:meta:layer_enabled": {
+      "type": "boolean"
+    },
+    "urn:x-matrox:cap:meta:format": {
+      "type": "string",
+      "enum": ["urn:x-nmos:format:video", "urn:x-nmos:format:audio", "urn:x-nmos:format:data"]
+    },
+    "urn:x-matrox:cap:meta:layer": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "urn:x-matrox:cap:meta:layer_compatibility_groups ": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "maximum": 63,
+        "minimum": 0
+      }
+    },    
     "urn:x-nmos:cap:format:media_type": {
       "$ref": "param_constraint_string.json"
     },
@@ -104,6 +123,15 @@
     },
     "urn:x-nmos:cap:transport:parameter_sets_flow_mode": {
       "$ref": "param_constraint_string.json"
+    },
+    "urn:x-matrox:cap:format:audio_layers": {
+      "$ref": "param_constraint_integer.json"
+    },
+    "urn:x-matrox:cap:format:video_layers": {
+      "$ref": "param_constraint_integer.json"
+    },
+    "urn:x-matrox:cap:format:data_layers": {
+      "$ref": "param_constraint_integer.json"
     }
   },
   "patternProperties": {
