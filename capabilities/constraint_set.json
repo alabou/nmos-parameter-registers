@@ -49,7 +49,7 @@
       "$ref": "param_constraint_integer.json"
     },
     "urn:x-nmos:cap:format:constant_bit_rate": {
-      "$ref": "param_constraint_integer.json"
+      "$ref": "param_constraint_boolean.json"
     },
     "urn:x-nmos:cap:format:profile": {
       "$ref": "param_constraint_string.json"
