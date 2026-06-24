@@ -20,6 +20,9 @@ Note: AMWA IS-04 specifies general requirements for the construction and [use of
 
 ## Values
 
+Note: A JSON schema supporting validation of all the formats defined in this register is available as **[format_register.json](format_register.json)**.
+These MAY be used in addition to the Source and Flow schemas found in the AMWA IS-04 specification.
+
 ### Video
 - **Name:** `urn:x-nmos:format:video`
 - **Description:** Identifies (sources of) video flows.

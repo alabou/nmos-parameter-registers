@@ -267,6 +267,23 @@ It MAY be used in place of the file with the same name in the AMWA BCP-004-01 sp
   - **Target:** (a) Sender `hkep` attribute, (b) SDP attribute `a=hkep:`
 - **Applicability:** AMWA IS-04
 
+### Privacy
+- **Name:** `urn:x-nmos:cap:transport:privacy`
+- **Description:** Indicates support for streams that use the Privacy Encryption Protocol.
+- **Specification:** per AMWA BCP-005-03
+  - **Type:** boolean
+  - **Target:** (a) Sender `privacy` attribute, (b) SDP attribute `a=privacy:`
+- **Applicability:** AMWA IS-04
+
+### USB Class
+- **Name:** `urn:x-nmos:cap:transport:usb_class`
+- **Description:** Indicates the USB classes supported.
+- **Specification:** per AMWA BCP-007-02
+  - **Type:** integer in the range 0 to 255
+  - **Target:** (a) Sender `urn:x-nmos:cap:transport:usb_class` capability, (b) Source `usb_devices` attribute when present.
+- **Applicability:** AMWA IS-04
+
+
 ### Parameter Sets Transport Mode
 - **Name:** `urn:x-nmos:cap:transport:parameter_sets_transport_mode`
 - **Description:** Identifies the acceptable parameter sets transport modes.

@@ -79,6 +79,14 @@ as enumerated in the schema accompanying this register
 - **Permitted Values:**
   - Since AMWA IS-04 v1.3, boolean `true`, `false`
 
+### Privacy
+- **Name:** `privacy`
+- **Description:** Identifies the use of the Privacy Encryption Protocol by the Sender.
+- **Specification:** [AMWA BCP-005-03 v1.0](https://specs.amwa.tv/bcp-005-03)
+- **Applicability:** `urn:x-nmos:transport:rtp`, `urn:x-nmos:transport:usb`
+- **Permitted Values:**
+  - Since AMWA IS-04 v1.3, boolean `true`, `false`
+
 ### Parameter Sets Transport Mode
 - **Name:** `parameter_sets_transport_mode`
 - **Description:** Identifies the codec parameter sets transport mode.
