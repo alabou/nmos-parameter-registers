@@ -95,9 +95,9 @@ as enumerated in the schema accompanying this register
 - **Permitted Values:**
   - Since AMWA IS-04 v1.3, string values defined for the Flow media type, as enumerated in the schema accompanying this register
 - For `video/H264` or `video/H265` string values representing the valid parameter sets flow as enumerated in the schema accompanying this register
-  - `strict`
-  - `static`
-  - `dynamic`
+  - `in_band`
+  - `out_of_band`
+  - `in_and_out_of_band`
 
 ### Parameter Sets Flow Mode
 - **Name:** `parameter_sets_flow_mode`
@@ -107,9 +107,9 @@ as enumerated in the schema accompanying this register
 - **Permitted Values:**
   - Since AMWA IS-04 v1.3, string values defined for the Flow media type, as enumerated in the schema accompanying this register
 - For `video/H264` or `video/H265` string values representing the valid parameter sets flow as enumerated in the schema accompanying this register
-  - `in_band`
-  - `out_of_band`
-  - `in_and_out_of_band`
+  - `strict`
+  - `static`
+  - `dynamic`
 
 [RFC-9134]: https://tools.ietf.org/html/rfc9134 "RTP Payload Format for ISO/IEC 21122 (JPEG XS)"
 [RFC-6184]: https://tools.ietf.org/html/rfc6184 "RTP Payload Format for H.264 Video"
