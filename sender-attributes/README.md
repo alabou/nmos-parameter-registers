@@ -47,14 +47,12 @@ These MAY be used in addition to the schema, _sender.json_, found in the AMWA IS
     - `slice_sequential` (T=1, K=1)
     - `slice_out_of_order` (T=0, K=1)
   - When the attribute is omitted, a JPEG XS Sender is assumed to be using the `codestream` packet transmission mode
-  - For `video/H264` string values representing the valid packetization-mode of [RFC 6184][RFC-6184] 
-as enumerated in the schema accompanying this register
+  - For `video/H264` string values representing the valid packetization-mode of [RFC 6184][RFC-6184] as enumerated in the schema accompanying this register
     - `single_nal_unit` (value 0)
     - `non_interleaved_nal_units` (value 1)
     - `interleaved_nal_units` (value 2)
   - When the attribute is omitted, a H.264 Sender is assumed to be using the `single_nal_unit` packet transmission mode
-  - For `video/H265` string values representing the value sprop-max-don-diff of [RFC 7798][RFC-7798] 
-as enumerated in the schema accompanying this register
+  - For `video/H265` string values representing the value sprop-max-don-diff of [RFC 7798][RFC-7798] as enumerated in the schema accompanying this register
     - `non_interleaved_nal_units` (value 0)
     - `interleaved_nal_units` (value greater than 0)
   - When the attribute is omitted, a H.265 Sender is assumed to be using the `non_interleaved_nal_units` packet transmission mode
